@@ -1,0 +1,237 @@
+body {
+    overflow-y: scroll;
+    overflow-x: hidden;
+    min-height: 100vh;
+}
+
+.container-fluid img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-color: #f38cb7;
+}
+
+.card-img {
+    display: block;
+    margin: 2rem auto 0;
+    max-width: 100%;
+}
+
+.carousel-control-prev-icon {
+    margin-right: 0;
+    padding: 20px;
+    height: 60px;
+    border-radius: 50%;
+}
+
+.carousel-control-next-icon {
+    margin-left: 0;
+    padding: 20px;
+    height: 60px;
+    border-radius: 50%;
+}
+
+.infant-card {
+    height: 100%;
+}
+
+
+.Discover {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+.discovery {
+    margin-bottom: 50px;
+}
+
+.search {
+    gap: 0.5rem;
+}
+
+.Search {
+    margin-left: 0;
+}
+
+.offcanvas-body *:hover {
+    color: orange
+}
+
+.child h2 {
+    color: rgb(187, 105, 118);
+}
+
+.Card-ID {
+    margin-left: 0;
+    width: 100% !important;
+    max-width: 100%;
+    flex-wrap: wrap;
+}
+
+.Card-ID img {
+    max-width: 180px;
+    width: 100% !important;
+    height: auto !important;
+}
+
+.row {
+    max-width: 100%;
+}
+
+.progress {
+    min-width: 0;
+}
+
+img {
+    max-width: 100%;
+}
+
+
+.responsive-image {
+    width: min(100%, 260px) !important;
+    height: auto !important;
+}
+
+.Discovery {
+    margin-left: 50px;
+}
+
+@media (max-width:1021px) {
+    .textmessage {
+        margin-bottom: 100px;
+    }
+
+    .carousel-control-prev-icon {
+        margin-right: 100px;
+        background-color: brown;
+    }
+
+    .carousel-control-next-icon {
+        margin-left: 100px;
+        background-color: brown;
+    }
+}
+
+@media (max-width:800px) {
+
+    .textmessage {
+        margin-bottom: 150px;
+    }
+
+    .carousel-control-prev-icon,
+    .carousel-control-next-icon {
+        background-color: brown;
+    }
+}
+
+@media (max-width:767px) {
+    .navbar .search {
+        margin-top: 0.75rem;
+        width: 100%;
+    }
+
+    .carousel-control-prev-icon,
+    .carousel-control-next-icon {
+        background-color: green;
+    }
+
+    .carousel-control-prev-icon {
+        margin-left: 100px;
+    }
+
+    .carousel-control-next-icon {
+        margin-right: 100px;
+    }
+
+    .navbar .search input {
+        min-width: 0;
+    }
+
+    .navbar .contact-button {
+        margin: 0.75rem 0 0;
+    }
+ 
+    #carouselExampleControlsNoTouching .carousel-item>.row,
+    #toddlersCarousel .carousel-item>.row {
+        display: block;
+        padding-left: 0 !important;
+        padding-right: 0 !important;
+    }
+
+    #carouselExampleControlsNoTouching .carousel-item>.row>.col-12,
+    #toddlersCarousel .carousel-item>.row>.col-12 {
+        display: none;
+        width: 100%;
+        max-width: 100%;
+        flex: 0 0 100%;
+    }
+
+    #carouselExampleControlsNoTouching .carousel-item>.row>.col-12:first-child,
+    #toddlersCarousel .carousel-item>.row>.col-12:first-child {
+        display: block;
+    }
+
+    .carousel-control-prev-icon,
+    .carousel-control-next-icon {
+        height: 44px;
+        width: 44px;
+        border-radius: 50%;
+    }
+
+    .top {
+        margin-top: 100px;
+    }
+
+    .top img {
+        height: 100px;
+    }
+
+    .carousel-caption {
+        padding: 0.75rem !important;
+    }
+
+    .carousel-caption h5 {
+        font-size: 1rem;
+    }
+
+    .carousel-caption p {
+        font-size: 0.8rem;
+    }
+
+    .infant-card {
+        margin-left: 12px;
+    }
+
+    .infant-card-img {
+        height: 200px;
+    }
+
+    #carouselExampleControlsNoTouching .row,
+    #toddlersCarousel .row {
+        padding-left: 2rem !important;
+        padding-right: 2rem !important;
+    }
+
+    .card {
+        overflow-wrap: anywhere;
+    }
+
+    .Card-ID {
+        gap: 1.5rem !important;
+    }
+ 
+
+    .Discover {
+        width: 220px;
+        margin-right: 120px; 
+    }
+
+    .carousel-item img {
+        height: 450px;
+    }
+}

@@ -1,0 +1,659 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sunny Side</title>
+    <link rel="icon" href="./Images/3a391d2ae2403e38979afe56d9ad4983.jpg">
+    <link rel="stylesheet" href="./Style/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="./Style/style.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary px-3">
+        <div class="container-fluid">
+            <img class="me-3" src="./Images/3a391d2ae2403e38979afe56d9ad4983.jpg" alt="Sunny Side logo">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0 gap-lg-2">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Link</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Dropdown
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                    <li>
+                        <a class="nav-link" href="./form.html">
+                            Log-In
+                        </a>
+                    </li>
+                </ul>
+                <form class="d-flex search ms-lg-auto" role="search">
+                    <input class="form-control Search" type="search" placeholder="Search" aria-label="Search" />
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+
+                <button class="nav-link contact-button border-0 bg-transparent ms-lg-3" type="button"
+                    data-bs-toggle="offcanvas" data-bs-target="#offcanvasDark" aria-controls="offcanvasDark"
+                    aria-label="Open contact information">
+                    <i class="fa-solid fa-phone"></i>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <div class="offcanvas offcanvas-start text-bg-dark" tabindex="-1" id="offcanvasDark"
+        aria-labelledby="offcanvasDarkLabel">
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasDarkLabel">Contact Us</h5>
+            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
+                aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+            <p class="mb-4">We are happy to answer your questions.</p>
+
+            <div class="d-grid gap-3">
+                <a class="text-white text-decoration-none" href="tel:+201000000000">
+                    <i class="fa-solid fa-phone me-2"></i>
+                    <span> +20 100 000 0000</span>
+                </a>
+                <a class="text-white text-decoration-none" href="mailto:info@sunnyside.com">
+                    <i class="fa-solid fa-envelope me-2"></i> 
+                    <span>info@sunnyside.com</span>
+                </a>
+                <span>
+                    <i class="fa-solid fa-location-dot me-2"></i> Cairo, Egypt
+                </span>
+            </div>
+
+            <div class="d-flex gap-3 mt-4">
+                <a class="text-white fs-4" href="https://www.facebook.com" target="_blank" rel="noopener"
+                    aria-label="Facebook">
+                    <i class="fa-brands fa-facebook"></i>
+                </a>
+                <a class="text-white fs-4" href="https://www.instagram.com" target="_blank" rel="noopener"
+                    aria-label="Instagram">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <div id="carouselExampleDark" class="carousel carousel-white slide vh-100">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active"
+                aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1"
+                aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2"
+                aria-label="Slide 3"></button>
+            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="3"
+                aria-label="Slide 4"></button>
+            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="4"
+                aria-label="Slide 5"></button>
+            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="5"
+                aria-label="Slide 6"></button>
+            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="6"
+                aria-label="Slide 7"></button>
+            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="7"
+                aria-label="Slide 8"></button>
+            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="8"
+                aria-label="Slide 9"></button>
+            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="9"
+                aria-label="Slide 10"></button>
+        </div>
+        <div class="carousel-inner vh-100">
+            <!-- Slide 1 -->
+            <div class="carousel-item active vh-100 top" data-bs-interval="10000">
+                <img src="./Images/bd0ee30c65cd35bef8a8ec8929c6d836.jpg" class="w-100 object-fit-cover rounded-5"
+                    alt="Nursery Slide 1">
+                <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 p-3 rounded-3 textmessage">
+                    <h5 class="text-white fw-bold">Where Every Child Shines! 🎈</h5>
+                    <p class="text-white-50 mb-0">A safe and joyful environment for early childhood development.</p>
+                </div>
+            </div>
+
+            <!-- Slide 2 -->
+            <div class="carousel-item vh-100 top" data-bs-interval="2000">
+                <img src="./Images/679e50f75e5fe2f86e2767f3efc4225f.jpg" class="w-100  object-fit-cover rounded-5"
+                    alt="Nursery Slide 2">
+                <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 p-3 rounded-3 textmessage">
+                    <h5 class="text-white fw-bold">Safe & Inspiring Spaces 🏫</h5>
+                    <p class="text-white-50 mb-0">Designed with high safety standards and creative learning tools.</p>
+                </div>
+            </div>
+
+            <!-- Slide 3 -->
+            <div class="carousel-item vh-100 top">
+                <img src="./Images/2a49c59c59654723d50db8b1cf8f679b.jpg" class="w-100 object-fit-cover rounded-5"
+                    alt="Nursery Slide 3">
+                <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 p-3 rounded-3 textmessage">
+                    <h5 class="text-white fw-bold">Creative Arts & Crafts 🎨</h5>
+                    <p class="text-white-50 mb-0">Unleashing imagination through painting, drawing, and hands-on
+                        projects.</p>
+                </div>
+            </div>
+
+            <!-- Slide 4 -->
+            <div class="carousel-item vh-100 top">
+                <img src="./Images/safe-zone-2.jpg" class="w-100 object-fit-cover rounded-5"
+                    alt="Nursery Slide 4">
+                <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 p-3 rounded-3 textmessage">
+                    <h5 class="text-white fw-bold">Secure Play Area 🛡️</h5>
+                    <p class="text-white-50 mb-0">Soft-padded indoor zones tailored for risk-free physical activities.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Slide 5 -->
+            <div class="carousel-item vh-100 top">
+                <img src="./Images/Safe-zone.jpg" class="w-100 object-fit-cover rounded-5" alt="Nursery Slide 5">
+                <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 p-3 rounded-3 textmessage">
+                    <h5 class="text-white fw-bold">24/7 Monitored Safety 🧸</h5>
+                    <p class="text-white-50 mb-0">Constant supervision to ensure total peace of mind for parents.</p>
+                </div>
+            </div>
+
+            <!-- Slide 6 -->
+            <div class="carousel-item vh-100 top">
+                <img src="./Images/3880cf79bbe2fa01c5dffb53555df5dd.jpg" class="w-100 object-fit-cover rounded-5"
+                    alt="Nursery Slide 6">
+                <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 p-3 rounded-3 textmessage">
+                    <h5 class="text-white fw-bold">Music & Storytelling 🎶</h5>
+                    <p class="text-white-50 mb-0">Building communication and auditory skills through interactive
+                        sessions.</p>
+                </div>
+            </div>
+
+            <!-- Slide 7 -->
+            <div class="carousel-item vh-100 top">
+                <img src="./Images/Fun.jpg" class="w-100 object-fit-cover rounded-5" alt="Nursery Slide 7">
+                <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 p-3 rounded-3 textmessage">
+                    <h5 class="text-white fw-bold">Outdoor Adventures 🌞</h5>
+                    <p class="text-white-50 mb-0">Fun group games, fresh air, and social growth in open spaces.</p>
+                </div>
+            </div>
+
+            <!-- Slide 8 -->
+            <div class="carousel-item vh-100 top">
+                <img src="./Images/Technology.jpg" class="w-100 object-fit-cover rounded-5" alt="Nursery Slide 8">
+                <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 p-3 rounded-3 textmessage">
+                    <h5 class="text-white fw-bold">Smart Tech & E-Learning 💻</h5>
+                    <p class="text-white-50 mb-0">Introducing modern digital tools and educational games for young
+                        minds.</p>
+                </div>
+            </div>
+            <!-- Slide-9 -->
+            <div class="carousel-item vh-100 top">
+                <img src="./Images/Seince.jpg" class="w-100 object-fit-cover rounded-5" alt="Nursery Slide 9">
+                <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 p-3 rounded-3 textmessage">
+                    <h5 class="text-white fw-bold">Fun Science & Discovery 🔬</h5>
+                    <p class="text-white-50 mb-0">Encouraging curiosity through safe, hands-on simple experiments.</p>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next ch-100" type="button" data-bs-target="#carouselExampleDark"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+    <section class="container py-5">
+
+        <div class="text-center mb-5">
+            <h2 class="fw-bold">Preschool Educational Programs Content</h2>
+            <h4 class="text-danger">
+                Educational Programs Designed to Spark Curiosity and Build the Future
+            </h4>
+            <p class="text-secondary">At our preschool, we offer more than just daily childcare; we create an inspiring
+                learning environment
+                that seamlessly blends purposeful play with modern curricula. We guide your child step-by-step to
+                develop their intellectual, social, and emotional skills with confidence and a lifelong love for
+                learning.</p>
+        </div>
+        <div class="row g-4  Discovery">
+
+            <div class="col-12 col-md-6 col-lg-4 w-100 discovery">
+                <div class="card h-100 shadow-sm border-4 border-danger rounded-5">
+                    <div class="card-body text-center p-4">
+                        <div class="display-4 mb-3">✏️📔</div>
+                        <h5 class="card-title fw-bold">. Infants Program</h5>
+                        <h6 class="text-danger">(3 Months – 1 Year)</h6>
+                        <p class="card-text text-muted">
+                            A Journey of Safety and Early Sensory Stimulation
+                        </p>
+                        <a href="#Infants" class="btn btn-primary">
+                            Learn More
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+        </div>
+        <div id="carouselExampleControlsNoTouching" class="carousel slide" data-bs-touch="false">
+            <div class="carousel-inner">
+
+                <div class="carousel-item active">
+                    <div class="row g-3 px-5">
+                        <div class="col-12 col-md-4">
+                            <div class="card infant-card border border-success rounded-3">
+                                <img src="./Images/Infants-1.jpg" class="card-img-top infant-card-img rounded-3"
+                                    alt="Toddler">
+                                <div class="card-body">
+                                    <p class="card-text">A playful space where toddlers can explore, move freely, and
+                                        build confidence through everyday activities.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-4">
+                            <div class="card infant-card border border-success rounded-3 Infants">
+                                <img src="./Images/Infants-2.jpg" class="card-img-top infant-card-img rounded-3"
+                                    alt="Toddler">
+                                <div class="card-body">
+                                    <p class="card-text">Engaging activities that help toddlers develop language,
+                                        coordination, and independence.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-4">
+                            <div class="card infant-card border border-success rounded-3">
+                                <img src="./Images/Infants-3.jpg" class="card-img-top infant-card-img rounded-3"
+                                    alt="Toddler">
+                                <div class="card-body">
+                                    <p class="card-text">A caring environment that encourages curiosity, creative play,
+                                        and positive social interaction.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="carousel-item">
+                    <div class="row g-3 px-5">
+                        <div class="col-12 col-md-4">
+                            <div class="card infant-card border border-success rounded-3">
+                                <img src="./Images/Infants-4.jpg" class="card-img-top infant-card-img rounded-3"
+                                    alt="Toddler">
+                                <div class="card-body">
+                                    <p class="card-text">Fun learning experiences that help toddlers practice new skills
+                                        through safe exploration.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-4">
+                            <div class="card infant-card border border-success rounded-3">
+                                <img src="./Images/Infants-5.jpg" class="card-img-top infant-card-img rounded-3"
+                                    alt="Toddler">
+                                <div class="card-body">
+                                    <p class="card-text">Play-based learning that strengthens attention, communication,
+                                        and cooperation with friends.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-4">
+                            <div class="card infant-card border border-success rounded-3">
+                                <img src="./Images/Infants-6.jpg" class="card-img-top infant-card-img rounded-3"
+                                    alt="Toddler">
+                                <div class="card-body">
+                                    <p class="card-text">A supportive setting where toddlers learn to express feelings
+                                        and become more independent.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="carousel-item">
+                    <div class="row g-3 px-5">
+                        <div class="col-12 col-md-4">
+                            <div class="card infant-card border border-success rounded-3">
+                                <img src="./Images/Infants-7.jpg" class="card-img-top infant-card-img rounded-3"
+                                    alt="Toddler">
+                                <div class="card-body">
+                                    <p class="card-text">Creative activities that give toddlers opportunities to
+                                        imagine, create, and express themselves.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-4">
+                            <div class="card infant-card border border-success rounded-3">
+                                <img src="./Images/Infants-8.jpg" class="card-img-top infant-card-img rounded-3"
+                                    alt="Toddler">
+                                <div class="card-body">
+                                    <p class="card-text">Group play that encourages friendship, sharing, teamwork, and
+                                        emotional growth.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-4">
+                            <div class="card infant-card border border-success rounded-3">
+                                <img src="./Images/Infants-9.jpg" class="card-img-top infant-card-img rounded-3"
+                                    alt="Toddler">
+                                <div class="card-body">
+                                    <p class="card-text">Interactive experiences that turn movement and discovery into
+                                        meaningful learning.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="carousel-item">
+                    <div class="row g-3 px-5">
+                        <div class="col-12 col-md-4">
+                            <div class="card infant-card border border-success rounded-3">
+                                <img src="./Images/Infants-10.jpg" class="card-img-top infant-card-img rounded-3"
+                                    alt="Toddler">
+                                <div class="card-body">
+                                    <p class="card-text">A bright space where toddlers can discover new ideas and
+                                        develop their imagination.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-4">
+                            <div class="card infant-card border border-success rounded-3">
+                                <img src="./Images/Infants-11.jpg" class="card-img-top infant-card-img rounded-3"
+                                    alt="Toddler">
+                                <div class="card-body">
+                                    <p class="card-text">Thoughtful care and playful activities help toddlers feel
+                                        secure while learning new skills.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-4">
+                            <div class="card infant-card border border-success rounded-3">
+                                <img src="./Images/Infants-12.jpg" class="card-img-top infant-card-img rounded-3"
+                                    alt="Toddler">
+                                <div class="card-body">
+                                    <p class="card-text">A joyful environment where toddlers grow through movement,
+                                        play, discovery, and friendship.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControlsNoTouching"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+            </button>
+
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControlsNoTouching"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon"></span>
+            </button>
+        </div>
+    </section>
+
+    <section class="container py-5">
+
+        <div class="text-center mb-5">
+            <h2 class="fw-bold">Preschool Educational Programs Content</h2>
+            <h4 class="text-danger">
+                Educational Programs Designed to Spark Curiosity and Build the Future
+            </h4>
+            <p class="text-secondary">We help turn your child's natural curiosity into active learning. This program
+                focuses on building vocabulary, improving balance and coordination through free play, and encouraging
+                positive social interactions with peers.
+            </p>
+        </div>
+        <div class="col-12 col-md-6 col-lg-4  w-100 Discovery">
+            <div class="col-12 col-md-6 col-lg-4 w-75 discovery">
+                <div class="card h-100 shadow-sm border-4 border-danger rounded-5">
+                    <div class="card-body text-center p-4">
+                        <div class="display-4 mb-3">✏️📔</div>
+                        <h5 class="card-title fw-bold">.Toddlers Program</h5>
+                        <h6 class="text-danger">(1 Year – 2 Years)</h6>
+                        <p class="card-text text-muted">
+                            First Steps in Exploring the World and Building Early Foundations
+                        </p>
+                        <a href="#Infants" class="btn btn-primary">
+                            Learn More
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+        </div>
+        <div id="toddlersCarousel" class="carousel slide" data-bs-touch="false">
+            <div class="carousel-inner">
+
+                <div class="carousel-item active">
+                    <div class="row g-3 px-5">
+                        <div class="col-12 col-md-4">
+                            <div class="card infant-card border border-success rounded-3">
+                                <img src="./Images/Told-1.jpg" class="card-img-top infant-card-img rounded-3"
+                                    alt="Infant">
+                                <div class="card-body">
+                                    <p class="card-text">A warm and safe space where infants can explore, play, and
+                                        begin their learning journey.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-4">
+                            <div class="card infant-card border border-success rounded-3">
+                                <img src="./Images/Told-2.jpg" class="card-img-top infant-card-img rounded-3"
+                                    alt="Infant">
+                                <div class="card-body">
+                                    <p class="card-text">Gentle activities that support early sensory development and
+                                        help babies discover the world around them.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-4">
+                            <div class="card infant-card border border-success rounded-3">
+                                <img src="./Images/Told-3.jpg" class="card-img-top infant-card-img rounded-3"
+                                    alt="Infant">
+                                <div class="card-body">
+                                    <p class="card-text">A caring environment designed to encourage curiosity, movement,
+                                        and joyful early experiences.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="carousel-item">
+                    <div class="row g-3 px-5">
+                        <div class="col-12 col-md-4">
+                            <div class="card infant-card border border-success rounded-3">
+                                <img src="./Images/Told-4.jpg" class="card-img-top infant-card-img rounded-3"
+                                    alt="Infant">
+                                <div class="card-body">
+                                    <p class="card-text">Fun and engaging activities that help infants build confidence
+                                        through safe exploration.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-4">
+                            <div class="card infant-card border border-success rounded-3">
+                                <img src="./Images/Told-5.jpg" class="card-img-top infant-card-img rounded-3"
+                                    alt="Infant">
+                                <div class="card-body">
+                                    <p class="card-text">Playful learning moments that develop attention, communication,
+                                        and social interaction.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-4">
+                            <div class="card infant-card border border-success rounded-3">
+                                <img src="./Images/Told-6.jpg" class="card-img-top infant-card-img rounded-3"
+                                    alt="Infant">
+                                <div class="card-body">
+                                    <p class="card-text">A nurturing setting where every child receives care, comfort,
+                                        and age-appropriate stimulation.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="carousel-item">
+                    <div class="row g-3 px-5">
+                        <div class="col-12 col-md-4">
+                            <div class="card infant-card border border-success rounded-3">
+                                <img src="./Images/Told-7.jpg" class="card-img-top infant-card-img rounded-3"
+                                    alt="Infant">
+                                <div class="card-body">
+                                    <p class="card-text">Creative play experiences that allow infants to express
+                                        themselves and learn at their own pace.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-4">
+                            <div class="card infant-card border border-success rounded-3">
+                                <img src="./Images/Told-8.jpg" class="card-img-top infant-card-img rounded-3"
+                                    alt="Infant">
+                                <div class="card-body">
+                                    <p class="card-text">Safe group activities that encourage friendship, cooperation,
+                                        and emotional growth.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-4">
+                            <div class="card infant-card border border-success rounded-3">
+                                <img src="./Images/Told-9.jpg" class="card-img-top infant-card-img rounded-3"
+                                    alt="Infant">
+                                <div class="card-body">
+                                    <p class="card-text">Interactive experiences that turn everyday play into meaningful
+                                        learning for young children.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="carousel-item">
+                    <div class="row g-3 px-5">
+                        <div class="col-12 col-md-4">
+                            <div class="card infant-card border border-success rounded-3">
+                                <img src="./Images/Told-10.jpg" class="card-img-top infant-card-img rounded-3"
+                                    alt="Infant">
+                                <div class="card-body">
+                                    <p class="card-text">A bright and welcoming space that supports discovery,
+                                        imagination, and early development.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-4">
+                            <div class="card infant-card border border-success rounded-3">
+                                <img src="./Images/Told-11.jpg" class="card-img-top infant-card-img rounded-3"
+                                    alt="Infant">
+                                <div class="card-body">
+                                    <p class="card-text">Thoughtful care and playful activities help infants feel secure
+                                        while developing new skills.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-4">
+                            <div class="card infant-card border border-success rounded-3">
+                                <img src="./Images/Told-12.jpg" class="card-img-top infant-card-img rounded-3"
+                                    alt="Infant">
+                                <div class="card-body">
+                                    <p class="card-text">A joyful learning environment where children grow through
+                                        movement, play, and discovery.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <button class="carousel-control-prev" type="button" data-bs-target="#toddlersCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+            </button>
+
+            <button class="carousel-control-next" type="button" data-bs-target="#toddlersCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon"></span>
+            </button>
+        </div>
+    </section>
+
+    <div class="modal fade" id="enrollmentModal" tabindex="-1">
+
+        <div class="modal-dialog modal-dialog-centered">
+
+            <div class="modal-content">
+
+                <div class="modal-header">
+                    <h5 class="modal-title">
+                        Enrollment
+                    </h5>
+
+                    <button type="button" class="btn-close" data-bs-dismiss="modal">
+                    </button>
+                </div>
+
+                <div class="modal-body">
+
+                    <p>
+                        Fill out the form and our team will contact you.
+                    </p>
+
+                </div>
+
+                <div class="modal-footer">
+
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+                        Close
+                    </button>
+
+                    <a href="./form.html" class="btn btn-primary">
+                        Continue
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <a href="./formChildd.html" class="btn btn-warning Discover">
+       Discover Your Child’s Learning Level🌸
+    </a>
+ 
+  
+  
+
+    <script src="./Scripts/bootstrap.bundle.min.js"></script>
+    <script src="./Scripts/main.js"></script>
+</body>
+
+</html>

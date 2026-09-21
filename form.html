@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Log In - Nursery</title>
+    <link rel="stylesheet" href="./Style/bootstrap.min.css">
+    <link rel="stylesheet" href="./Style/style.css">
+</head>
+
+<body class="bg-light d-flex align-items-center justify-content-center min-vh-100 py-5">
+
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-12 col-md-8 col-lg-5">
+                
+                <!-- كارت تسجيل الدخول -->
+                <div class="card border-0 shadow-lg p-4 p-md-5 rounded-4">
+                    
+                    <div class="text-center mb-4">
+                        <h2 class="fw-bold text-primary">Welcome Back! 👋</h2>
+                        <p class="text-muted">Please enter your details to log in</p>
+                    </div>
+
+                    <!-- التوجيه بعد تسجيل الدخول إلى الصفحة الرئيسية أو لوحة التحكم -->
+                    <form action="./Thank-You.html" method="GET">
+
+                        <!-- البريد الإلكتروني -->
+                        <div class="mb-3">
+                            <label for="loginEmail" class="form-label fw-semibold">Email address</label>
+                            <input type="email" class="form-control" id="loginEmail" placeholder="name@example.com" required>
+                        </div>
+
+                        <!-- كلمة المرور -->
+                        <div class="mb-3">
+                            <div class="d-flex justify-content-between align-items-center mb-1">
+                                <label for="loginPassword" class="form-label fw-semibold mb-0">Password</label>
+                                <a href="#" class="text-primary small text-decoration-none">Forgot password?</a>
+                            </div>
+                            <input type="password" class="form-control" id="loginPassword" placeholder="••••••••" required>
+                        </div>
+
+                        <!-- تذكرني -->
+                        <div class="mb-4 form-check">
+                            <input type="checkbox" class="form-check-input" id="rememberMe">
+                            <label class="form-check-label text-secondary" for="rememberMe">Remember me</label>
+                        </div>
+
+                        <!-- زرار تسجيل الدخول -->
+                        <button type="submit" class="btn btn-primary w-100 btn-lg rounded-pill fw-bold shadow-sm mb-3">
+                            Log In
+                        </button>
+                    </form>
+
+                    <!-- رابط الانتقال لإنشاء حساب جديد -->
+                    <div class="text-center mt-3 pt-3 border-top">
+                        <p class="text-secondary mb-0">
+                            Don't have an account? 
+                            <a href="./register.html" class="text-primary fw-bold text-decoration-none ms-1">Create Account</a>
+                        </p>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <script src="./Scripts/bootstrap.bundle.min.js"></script>
+    <script src="./Scripts/main.js"></script>
+</body>
+
+</html>

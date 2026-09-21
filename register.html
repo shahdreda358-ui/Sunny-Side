@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register / Registration</title>
+    <link rel="stylesheet" href="./Style/bootstrap.min.css">
+    <link rel="stylesheet" href="./Style/style.css">
+</head>
+
+<body class="bg-light d-flex align-items-center justify-content-center min-vh-100 py-5">
+
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-12 col-md-8 col-lg-6">
+                <div class="card border-0 shadow-lg p-4 p-md-5 rounded-4">
+
+                    <div class="text-center mb-4">
+                        <h2 class="fw-bold text-primary">Create Account 🎈</h2>
+                        <p class="text-muted">Fill in the information below to join us</p>
+                    </div>
+                    <form id="registerForm" action="./Thank-You.html" method="GET">
+                        <div class="row g-3 mb-3">
+                            <div class="col-md-6">
+                                <label for="firstName" class="form-label fw-semibold">First Name</label>
+                                <input type="text" class="form-control" id="firstName"
+                                    placeholder="Child/Parent First Name" required>
+                            </div>
+                            <div class="col-md-6">
+                                <label for="secondName" class="form-label fw-semibold">Second Name</label>
+                                <input type="text" class="form-control" id="secondName" placeholder="Second Name"
+                                    required>
+                            </div>
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="thirdName" class="form-label fw-semibold">Third Name</label>
+                            <input type="text" class="form-control" id="thirdName" placeholder="Third Name">
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="phoneNumber" class="form-label fw-semibold">Phone Number</label>
+                            <input type="tel" class="form-control" id="phoneNumber" placeholder="01123456789" required>
+                            <div class="form-text">We'll never share your Phone Number with anyone else.</div>
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="emailAddress" class="form-label fw-semibold">Email address</label>
+                            <input type="email" class="form-control" id="emailAddress" placeholder="name@example.com"
+                                required>
+                            <div class="form-text">We'll never share your email with anyone else.</div>
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="userPassword" class="form-label fw-semibold">Password</label>
+                            <input type="password" class="form-control" id="userPassword" placeholder="••••••••"
+                                required>
+                        </div>
+
+                        <div class="mb-4 form-check">
+                            <input type="checkbox" class="form-check-input" id="termsCheck" required>
+                            <label class="form-check-label text-secondary" for="termsCheck">I agree to the terms and
+                                conditions</label>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary w-100 btn-lg rounded-pill fw-bold shadow-sm">
+                            Submit Registration
+                        </button>
+                    </form>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <div class="toast-container position-fixed top-0 start-50 translate-middle-x p-3">
+        <div class="toast" role="alert" aria-live="assertive" aria-atomic="true" id="myToast">
+            <div class="toast-header">
+                <strong class="me-auto">Sunny Side</strong>
+                <small>Now</small>
+                <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+            </div>
+            <div class="toast-body">
+                <div class="col-12 col-md-8 col-lg-6 w-100">
+                    <div class="card border-0 shadow-lg p-4 p-md-5 rounded-4 bg-white bg-opacity-75 backdrop-blur">
+
+                        <div class="mb-4">
+                            <img src="./Images/dc22e4268fdeb4fd45a90c50020c4718.jpg" class="responsive-image border border-3 shadow-sm ms-4"
+                                style="width: 160px; height: 100px; object-fit: cover;" alt="Thank You">
+                        </div>
+                        <h2 class="text-danger fw-bold mb-1">Thank you for reaching out! 🎈</h2>
+
+
+                        <p class="text-primary fw-semibold fs-5 mb-1">
+                            We’re so excited to welcome you to our nursery family.
+                        </p>
+                        <p class="text-muted fs-6 mb-3">
+                            We have received your details and will get in touch with you shortly.
+                        </p>
+                        <div>
+                            <a href="index.html" class="btn btn-danger btn-lg rounded-pill px-4 shadow-sm fw-bold">
+                                Back To Home
+                            </a>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="./Scripts/bootstrap.bundle.min.js"></script>
+    <script src="./Scripts/main.js"></script>
+</body>
+
+</html>
