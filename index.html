@@ -23,30 +23,23 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0 gap-lg-2">
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        <a class="nav-link active" aria-current="page" href="#home">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Link</a>
+                        <a class="nav-link" href="#faq">FAQs</a>
                     </li>
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
                             aria-expanded="false">
-                            Dropdown
+                            Programs
                         </a>
                         <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="#">Action</a></li>
-                            <li><a class="dropdown-item" href="#">Another action</a></li>
-                            <li>
-                                <hr class="dropdown-divider">
-                            </li>
-                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            <li><a class="dropdown-item" href="#infants">Infants Program</a></li>
+                            <li><a class="dropdown-item" href="#toddlers">Toddlers Program</a></li>
                         </ul>
                     </li>
                     <li class="nav-item">
-                    <li>
-                        <a class="nav-link" href="./form.html">
-                            Log-In
-                        </a>
+                        <a class="nav-link" href="./form.html">Log-In</a>
                     </li>
                 </ul>
                 <form class="d-flex search ms-lg-auto" role="search">
@@ -100,7 +93,7 @@
         </div>
     </div>
 
-    <div id="carouselExampleDark" class="carousel carousel-white slide vh-100">
+    <div id="home" class="carousel carousel-white slide vh-100">
         <div class="carousel-indicators">
             <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active"
                 aria-current="true" aria-label="Slide 1"></button>
@@ -120,8 +113,6 @@
                 aria-label="Slide 8"></button>
             <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="8"
                 aria-label="Slide 9"></button>
-            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="9"
-                aria-label="Slide 10"></button>
         </div>
         <div class="carousel-inner vh-100">
             <!-- Slide 1 -->
@@ -223,7 +214,7 @@
             <span class="visually-hidden">Next</span>
         </button>
     </div>
-    <section class="container py-5">
+    <section id="infants" class="container py-5">
 
         <div class="text-center mb-5">
             <h2 class="fw-bold">Preschool Educational Programs Content</h2>
@@ -236,9 +227,9 @@
                 develop their intellectual, social, and emotional skills with confidence and a lifelong love for
                 learning.</p>
         </div>
-        <div class="row g-4  Discovery">
+        <div class="row g-4 justify-content-center">
 
-            <div class="col-12 col-md-6 col-lg-4 w-100 discovery">
+            <div class="col-12 col-md-6 col-lg-4 discovery">
                 <div class="card h-100 shadow-sm border-4 border-danger rounded-5">
                     <div class="card-body text-center p-4">
                         <div class="display-4 mb-3">✏️📔</div>
@@ -247,7 +238,7 @@
                         <p class="card-text text-muted">
                             A Journey of Safety and Early Sensory Stimulation
                         </p>
-                        <a href="#Infants" class="btn btn-primary">
+                        <a href="#infants" class="btn btn-primary">
                             Learn More
                         </a>
                     </div>
@@ -415,7 +406,7 @@
         </div>
     </section>
 
-    <section class="container py-5">
+    <section id="toddlers" class="container py-5">
 
         <div class="text-center mb-5">
             <h2 class="fw-bold">Preschool Educational Programs Content</h2>
@@ -427,8 +418,8 @@
                 positive social interactions with peers.
             </p>
         </div>
-        <div class="col-12 col-md-6 col-lg-4  w-100 Discovery">
-            <div class="col-12 col-md-6 col-lg-4 w-75 discovery">
+        <div class="col-12 col-md-6 col-lg-4 mx-auto">
+            <div class="discovery">
                 <div class="card h-100 shadow-sm border-4 border-danger rounded-5">
                     <div class="card-body text-center p-4">
                         <div class="display-4 mb-3">✏️📔</div>
@@ -437,7 +428,7 @@
                         <p class="card-text text-muted">
                             First Steps in Exploring the World and Building Early Foundations
                         </p>
-                        <a href="#Infants" class="btn btn-primary">
+                        <a href="#toddlers" class="btn btn-primary">
                             Learn More
                         </a>
                     </div>
@@ -604,25 +595,103 @@
         </div>
     </section>
 
-    <div class="modal fade" id="enrollmentModal" tabindex="-1">
+    <section id="faq" class="container py-5">
+        <div class="row justify-content-center">
+            <div class="col-12 col-lg-9">
+                <div class="text-center mb-4">
+                    <h2 class="fw-bold">Frequently Asked Questions</h2>
+                    <p class="text-secondary mb-0">Helpful information for your family.</p>
+                </div>
+
+                <div class="accordion" id="nurseryFaq">
+                    <div class="accordion-item">
+                        <h3 class="accordion-header" id="faqHeadingOne">
+                            <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#faqAnswerOne" aria-expanded="true" aria-controls="faqAnswerOne">
+                                What ages can join the nursery?
+                            </button>
+                        </h3>
+                        <div id="faqAnswerOne" class="accordion-collapse collapse show"
+                            aria-labelledby="faqHeadingOne" data-bs-parent="#nurseryFaq">
+                            <div class="accordion-body">
+                                We welcome children from 3 months to 2 years, with programs tailored to each age group.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h3 class="accordion-header" id="faqHeadingTwo">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#faqAnswerTwo" aria-expanded="false" aria-controls="faqAnswerTwo">
+                                How can I learn more about enrollment?
+                            </button>
+                        </h3>
+                        <div id="faqAnswerTwo" class="accordion-collapse collapse"
+                            aria-labelledby="faqHeadingTwo" data-bs-parent="#nurseryFaq">
+                            <div class="accordion-body">
+                                Use the enrollment form and our team will contact you with the next steps.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h3 class="accordion-header" id="faqHeadingThree">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#faqAnswerThree" aria-expanded="false" aria-controls="faqAnswerThree">
+                                Can I visit the nursery before enrolling?
+                            </button>
+                        </h3>
+                        <div id="faqAnswerThree" class="accordion-collapse collapse"
+                            aria-labelledby="faqHeadingThree" data-bs-parent="#nurseryFaq">
+                            <div class="accordion-body">
+                                Yes. Contact us to arrange a visit and see our learning spaces.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h3 class="accordion-header" id="faqHeadingFour">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#faqAnswerFour" aria-expanded="false" aria-controls="faqAnswerFour">
+                                What should I bring for my child?
+                            </button>
+                        </h3>
+                        <div id="faqAnswerFour" class="accordion-collapse collapse"
+                            aria-labelledby="faqHeadingFour" data-bs-parent="#nurseryFaq">
+                            <div class="accordion-body">
+                                Our team will share an age-appropriate checklist with you during the enrollment process.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="text-center mt-4">
+                    <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                        data-bs-target="#enrollmentModal">
+                        Plan a Visit
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="modal fade" id="enrollmentModal" tabindex="-1" aria-labelledby="enrollmentModalLabel"
+        aria-hidden="true">
 
         <div class="modal-dialog modal-dialog-centered">
 
             <div class="modal-content">
 
                 <div class="modal-header">
-                    <h5 class="modal-title">
-                        Enrollment
+                    <h5 class="modal-title" id="enrollmentModalLabel">
+                        Plan a Visit
                     </h5>
 
-                    <button type="button" class="btn-close" data-bs-dismiss="modal">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
                     </button>
                 </div>
 
                 <div class="modal-body">
 
                     <p>
-                        Fill out the form and our team will contact you.
+                        Start with the enrollment form and our team will contact you to arrange a visit.
                     </p>
 
                 </div>
@@ -634,7 +703,7 @@
                     </button>
 
                     <a href="./form.html" class="btn btn-primary">
-                        Continue
+                        Continue to the form
                     </a>
 
                 </div>

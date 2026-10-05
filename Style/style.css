@@ -97,22 +97,13 @@ img {
     height: auto !important;
 }
 
-.Discovery {
-    margin-left: 50px;
-}
-
 @media (max-width:1021px) {
     .textmessage {
         margin-bottom: 100px;
     }
 
-    .carousel-control-prev-icon {
-        margin-right: 100px;
-        background-color: brown;
-    }
-
+    .carousel-control-prev-icon,
     .carousel-control-next-icon {
-        margin-left: 100px;
         background-color: brown;
     }
 }
@@ -138,14 +129,6 @@ img {
     .carousel-control-prev-icon,
     .carousel-control-next-icon {
         background-color: green;
-    }
-
-    .carousel-control-prev-icon {
-        margin-left: 100px;
-    }
-
-    .carousel-control-next-icon {
-        margin-right: 100px;
     }
 
     .navbar .search input {
@@ -203,10 +186,6 @@ img {
         font-size: 0.8rem;
     }
 
-    .infant-card {
-        margin-left: 12px;
-    }
-
     .infant-card-img {
         height: 200px;
     }
@@ -227,8 +206,10 @@ img {
  
 
     .Discover {
-        width: 220px;
-        margin-right: 120px; 
+        width: fit-content;
+        max-width: 100%;
+        margin: 0 auto 30px;
+        text-align: center;
     }
 
     .carousel-item img {
